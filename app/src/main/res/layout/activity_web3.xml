@@ -11,8 +11,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Language Used : Solidity , C++ , Java\n,
-HTML , Rust"
+        android:text="Language Used : Solidity , C++ , Java, HTML , Rust"
         android:textColor="@color/teal_700"
         android:textStyle="bold"
         android:textSize="24sp"

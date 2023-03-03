@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="70dp"
-        android:textColor="@color/purple_200"
+        android:textColor="@color/teal_200"
         android:fontFamily="@font/pacifico"
         android:textSize="34sp"
         android:text="Welcome to Uday Knowledge Hub"/>

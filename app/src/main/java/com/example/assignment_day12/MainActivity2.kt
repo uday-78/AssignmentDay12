@@ -14,41 +14,49 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val callback = findViewById<Button>(R.id.button)
-        callback.setOnClickListener {
+        val callbtn = findViewById<Button>(R.id.CallButton)
+        callbtn.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
             intent.setData(Uri.parse("tel:123456789"))
-          startActivity(intent)
-        }
-
-
-        val card1 = findViewById<CardView>(R.id.App)
-        val card2 = findViewById<CardView>(R.id.Web)
-        val card3 = findViewById<CardView>(R.id.Block)
-        val card4 = findViewById<CardView>(R.id.cyber)
-        val card5 = findViewById<CardView>(R.id.ML)
-        val card6 = findViewById<CardView>(R.id.web3)
-
-
-        card1.setOnClickListener {
-            val intent = Intent(applicationContext,AndroidDevelopment::class.java)
             startActivity(intent)
         }
 
-        card6.setOnClickListener {
-            val intent1 = Intent(applicationContext ,Web3::class.java)
+        val card1 = findViewById<CardView>(R.id.AppDev)
+        val card2= findViewById<CardView>(R.id.ML)
+        val card3 = findViewById<CardView>(R.id.Cyber)
+        val card4 = findViewById<CardView>(R.id.Block)
+        val card5 = findViewById<CardView>(R.id.Web3)
+        val card6 = findViewById<CardView>(R.id.WebDev)
+
+        card1.setOnClickListener {
+            val intent1 = Intent(applicationContext,AndroidDevelopment::class.java)
             startActivity(intent1)
         }
 
-        card5.setOnClickListener {
-            val intent2 = Intent(applicationContext,MachineLearning::class.java)
+        card2.setOnClickListener {
+            val intent2= Intent(applicationContext,MachineLearning::class.java)
             startActivity(intent2)
         }
 
+        card3.setOnClickListener {
+            val intent3 = Intent(applicationContext,CyberSecurity::class.java)
+            startActivity(intent3)
+        }
 
+        card4.setOnClickListener {
+            val intent4 = Intent(applicationContext,blockChain::class.java)
+            startActivity(intent4)
+        }
 
+        card5.setOnClickListener {
+            val intent5 = Intent(applicationContext,Web3::class.java)
+            startActivity(intent5)
+        }
 
-
+        card6.setOnClickListener {
+            val intent6 = Intent(applicationContext,WebDev::class.java)
+            startActivity(intent6)
+        }
 
     }
 }
